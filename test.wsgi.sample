@@ -1,0 +1,16 @@
+activate_this = '/path/to/venv/bin/activate_this.py'
+#execfile(activate_this, dict(__file__=activate_this))
+
+exec(compile(open(activate_this, "rb").read(), activate_this, 'exec'), dict(__file__=activate_this))
+
+import sys
+sys.path.insert(0, '/path/to/web/root')
+
+from test.app import app as application
+
+
+
+
+
+
+

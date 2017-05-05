@@ -1,0 +1,24 @@
+[default]
+environment = development
+
+[development]
+
+debug = True
+secret_key = mysecretkey
+database_uri = sqlite:////tmp/myapp.db
+route_1 = /
+route_2 = /route2
+
+
+[test]
+
+debug = True
+secret_key = mysecretkey
+database_uri = sqlite:////tmp/myapp.db
+route_1 = /test
+route_2 = /test/route-2
+
+
+[production]
+
+
